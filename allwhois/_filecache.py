@@ -50,7 +50,7 @@ def _get_cache_name(function):
 
 def _log_error(error_str):
     try:
-        error_log_fname = _os.path.join(_SRC_DIR, 'filecache{_MODULE_SUFFIX}.err.log')
+        error_log_fname = _os.path.join(_SRC_DIR, f'filecache{_MODULE_SUFFIX}.err.log')
         if _os.path.isfile(error_log_fname):
             fhand = open(error_log_fname, 'a')
         else:
